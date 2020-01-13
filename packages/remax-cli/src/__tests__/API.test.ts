@@ -93,9 +93,9 @@ describe('API', () => {
     `);
     expect(extensions.jsHelper).toMatchInlineSnapshot(`
       Object {
-        "extension": ".sjs",
-        "src": "from",
-        "tag": "import-sjs",
+        "extension": "",
+        "src": "",
+        "tag": "",
       }
     `);
     expect(extensions.style).toMatchInlineSnapshot(`".acss"`);

@@ -11,13 +11,7 @@ describe('node', () => {
       }
     `);
     expect(node().meta?.style).toMatchInlineSnapshot(`".acss"`);
-    expect(node().meta?.jsHelper).toMatchInlineSnapshot(`
-      Object {
-        "extension": ".sjs",
-        "src": "from",
-        "tag": "import-sjs",
-      }
-    `);
+    expect(node().meta?.jsHelper).toMatchInlineSnapshot(`undefined`);
     expect(node().meta?.include).toMatchInlineSnapshot(`
       Object {
         "src": "src",

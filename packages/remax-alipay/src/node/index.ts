@@ -13,18 +13,12 @@ const plugin: RemaxNodePluginConstructor = () => {
         src: 'src',
       },
       style: '.acss',
-      jsHelper: {
-        extension: '.sjs',
-        tag: 'import-sjs',
-        src: 'from',
-      },
       include: {
         tag: 'include',
         src: 'src',
       },
       ejs: {
         page: path.join(EJS_TPL_ROOT, 'page.ejs'),
-        jsHelper: path.join(EJS_TPL_ROOT, 'helper.js'),
       },
     },
     hostComponents,
